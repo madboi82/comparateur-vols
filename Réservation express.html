@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation de Vols</title>
+    <link rel="stylesheet" href="Réservation express.css">
+</head>
+<body>
+    <header>
+        <h1>Réservation de Vols</h1>
+    </header>
+    <main>
+        <section class="search-form">
+            <form id="flight-search-form">
+                <div>
+                    <label for="departure-city">Ville de départ:</label>
+                    <input type="text" id="departure-city" name="departure-city" required>
+                    <div id="departure-suggestions" class="suggestions"></div>
+                </div>
+                <div>
+                    <label for="arrival-city">Ville d'arrivée:</label>
+                    <input type="text" id="arrival-city" name="arrival-city" required>
+                    <div id="arrival-suggestions" class="suggestions"></div>
+                </div>
+                <div>
+                    <label for="departure-date">Date de départ:</label>
+                    <input type="date" id="departure-date" name="departure-date" required>
+                </div>
+                <div>
+                    <label for="return-date">Date de retour:</label>
+                    <input type="date" id="return-date" name="return-date">
+                </div>
+                <div>
+                    <button type="submit">Rechercher des vols</button>
+                </div>
+            </form>
+        </section>
+        <section id="widget-container" class="widget-container" style="display:none;">
+            <div id="kayakWidgetContainer"></div>
+        </section>
+    </main>
+
+    <script src="https://www.kayak.com/affiliate/widget-v2.js"></script>
+    <script src="Réservation express.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
