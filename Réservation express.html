@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Réservation de Vols</title>
     <link rel="stylesheet" href="Réservation express.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </head>
 <body>
     <header>
@@ -25,23 +28,22 @@
                 </div>
                 <div>
                     <label for="departure-date">Date de départ:</label>
-                    <input type="date" id="departure-date" name="departure-date" required>
+                    <input type="date" id="departure-date" name="departure-date">
                 </div>
                 <div>
                     <label for="return-date">Date de retour:</label>
                     <input type="date" id="return-date" name="return-date">
                 </div>
                 <div>
-                    <button type="submit">Rechercher des vols</button>
+                    <button type="submit" >Rechercher des vols</button>
                 </div>
             </form>
         </section>
-        <section id="widget-container" class="widget-container" style="display:none;">
-            <div id="kayakWidgetContainer"></div>
+        <section class="search-results">
+            <h2>Résultats de la recherche</h2>
+            <div id="results"></div>
         </section>
     </main>
-
-    <script src="https://www.kayak.com/affiliate/widget-v2.js"></script>
     <script src="Réservation express.js"></script>
 </body>
 </html>
